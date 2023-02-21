@@ -5,6 +5,7 @@ namespace Gloudemans\Tests\Shoppingcart;
 use Orchestra\Testbench\TestCase;
 use Gloudemans\Shoppingcart\CartItem;
 use Gloudemans\Shoppingcart\ShoppingcartServiceProvider;
+use PHPUnit\Framework\Attributes\Test;
 
 class CartItemTest extends TestCase
 {
@@ -19,7 +20,7 @@ class CartItemTest extends TestCase
         return [ShoppingcartServiceProvider::class];
     }
 
-    /** @test */
+    #[Test]
     public function it_can_be_cast_to_an_array()
     {
         $cartItem = new CartItem(1, 'Some item', 10.00, ['size' => 'XL', 'color' => 'red']);
@@ -40,7 +41,7 @@ class CartItemTest extends TestCase
         ], $cartItem->toArray());
     }
 
-    /** @test */
+    #[Test]
     public function it_can_be_cast_to_json()
     {
         $cartItem = new CartItem(1, 'Some item', 10.00, ['size' => 'XL', 'color' => 'red']);
