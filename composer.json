@@ -1,16 +1,12 @@
 {
-    "name": "michaelbelgium/shoppingcart",
+    "name": "rodrigopauletti/laravelshoppingcart",
     "description": "Laravel Shoppingcart",
     "keywords": ["laravel", "shoppingcart"],
     "license": "MIT",
     "authors": [
         {
-            "name": "Rob Gloudemans",
-            "email": "info@robgloudemans.nl"
-        },
-        {
-            "name": "Michael V.",
-            "email": "michael@michaelbelgium.me"
+            "name": "Rodrigo Pauletti",
+            "email": "rodrigo@wopus.dev"
         }
     ],
     "require": {
